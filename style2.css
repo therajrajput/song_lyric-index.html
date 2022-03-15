@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    box-shadow: 2px 4px 8px 3px;
+    background: #ebeae1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    box-shadow: 2px 10px 10px black;
+    align-items: center;
+}
+span{
+    font-size: 40px;
+}
+.home{
+    height: 600px;
+    width: 800px;
+    background-color: aquamarine;
+}
+.sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 80%;  
+    width: auto;  
+    padding: 16px;  
+    margin-top: -22px;  
+    color: rgb(17, 16, 16);  
+    font-weight: bold;  
+    font-size: 18px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+}  
+.right {  
+    right: 0;  
+    border-radius: 3px 0 0 3px;  
+} 
+.left {  
+    left: 0;  
+    border-radius: 3px 0 0 3px;  
+}   
+    .left:hover, .right:hover {  
+        background-color: rgba(115, 115, 115, 0.8);  
+    }  
+    .left{
+        display: flex;
+        justify-content: left;
+    }
+    .right{
+        display: flex;
+        justify-content: right;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    h1{
+        color: red;
+        font-style: initial;
+        padding-top: 10px;
+    }
+    .btn{
+        height: 30px;
+        width: 80px;
+        background-color: rgb(224, 146, 44);
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: baseline;
+        transform: translate(370px,140px);
+
+    }
+    button{
+        font-weight: bolder;
+        color: black;
+    }
+    button a{
+        color: black;
+    }

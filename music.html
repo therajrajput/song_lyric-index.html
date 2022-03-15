@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style2.css">
+    <title>musis player</title>
+    <script src="https://kit.fontawesome.com/79cd4a257f.js" crossorigin="anonymous"></script>
+    
+
+</head>
+<body>
+
+        <nav><ul><li>
+            <span>music player</span>
+        </li></ul></nav>
+        <section class="sec">
+        <div class="home">
+            <img src="/hqdefault.jpg" alt="">
+            <h1>90 Degree (Official Video) Gurnam Bhullar | Gurlez Akhtar | Desi Crew | Kaptaan | New Punjabi Song</h1>
+            <button class="btn"><a href="/lric.html"> play song </a></button>
+        </div> 
+        
+        
+            
+            
+            <a class="left" onclick="nextSlide(-1)">❮</a>  
+           <a class="right" onclick="nextSlide(1)">❯</a> 
+          
+    
+        
+    
+
+    </section>
+    <script>  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+    
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+    
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+    
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+    </script>  
+
+</body>
+</html>
